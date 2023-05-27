@@ -1,0 +1,171 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "usuario": "John Doe",
+        "email": "john.due@gmail.com"
+      }
+    ],
+    "products": [
+      {
+        "id": "RT38K5932",
+        "name": "Heladera",
+        "manufacturer": "Samsung",
+        "color": "blanco, negro, amarillo",
+        "energyEfficiency": "A+",
+        "descripcion": "Heladera inverter no frost Samsung RT38K5932 inox con freezer 382L 220V"
+      },
+      {
+        "id": "CS-GIC12H-01F",
+        "name": "Aire acondicionado",
+        "manufacturer": "Comfee",
+        "color": "blanco, gris",
+        "energyEfficiency": "A++",
+        "descripcion": "Aire acondicionado Comfee split inverter frío/calor 2967 frigorías blanco 220V CS-GIC12H-01F"
+      },
+      {
+        "id": "Chtec2000",
+        "name": "Calefactor Halógeno",
+        "manufacturer": "Liliana",
+        "color": "rojo, marron",
+        "energyEfficiency": "B",
+        "descripcion": "Calefactor Halógeno Techo Exterior Liliana Chtec2000 2000 W Color Negro"
+      },
+      {
+        "id": "ELAF08",
+        "name": "Lavarropas automático",
+        "manufacturer": "Electrolux",
+        "color": "blanco, gris, azul",
+        "energyEfficiency": "A",
+        "descripcion": "Lavarropas automático Electrolux ELAF08 blanco 8kg 220 V"
+      },
+      {
+        "id": "WF876XG",
+        "name": "Cocina",
+        "manufacturer": "Whirlpool",
+        "color": "blanco, gris, negro",
+        "energyEfficiency": "B",
+        "descripcion": "Cocina Whirlpool Gourmand WF876XG gas natural 5 hornallas inox 220V puerta con visor 103L"
+      },
+      {
+        "id": "Mdgsa23npi",
+        "name": "Microondas",
+        "manufacturer": "Sansei",
+        "color": "negro, marron, azul",
+        "energyEfficiency": "C",
+        "descripcion": "Microondas Grill Digital Sansei Mdgsa23npi 23l 800w"
+      },
+      {
+        "id": "PE-VTR42",
+        "name": "Ventilador de techo",
+        "manufacturer": "Peabody",
+        "color": "negro, blanco, marron",
+        "energyEfficiency": "B",
+        "descripcion": "Ventilador de techo Peabody PE-VTR42 plata con 3 palas color transparente de acrílico, 42 pulgadas de diámetro 220 V"
+      },
+      {
+        "id": "AS9121PI",
+        "name": "Aspiradora Trineo",
+        "manufacturer": "Atma",
+        "color": "rojo, azul, amarillo, violeta",
+        "energyEfficiency": "A",
+        "descripcion": "Aspiradora Trineo Atma AS9121PI 2L morado y plateada 220V"
+      },
+      {
+        "id": "advantage2375",
+        "name": "Impresora",
+        "manufacturer": "HP",
+        "color": "negra, amarillo",
+        "energyEfficiency": "C",
+        "descripcion": "Impresora a color multifunción HP Deskjet Ink Advantage 2375 blanca y verde 200V - 240V"
+      },
+      {
+        "id": "flip6",
+        "name": "Parlante",
+        "manufacturer": "JBL",
+        "color": "azul, negro, rojo",
+        "energyEfficiency": "A++",
+        "descripcion": "Parlante JBL Flip 6 portátil con bluetooth waterproof negro"
+      },
+      {
+        "id": "A54",
+        "name": "Smartphone",
+        "manufacturer": "Samsung",
+        "color": "negro",
+        "energyEfficiency": "A",
+        "descripcion": "Samsung Galaxy A54 5g 256gb 8gb Ram Awesome Graphite"
+      },
+      {
+        "id": "RE200",
+        "name": "Access point",
+        "manufacturer": "TP-Link",
+        "color": "blanco",
+        "energyEfficiency": "B",
+        "descripcion": "Access point, Range extender TP-Link RE200 V3 blanco 220V"
+      },
+      {
+        "id": "15-ef2513la",
+        "name": "Notebook",
+        "manufacturer": "HP",
+        "color": "negro, gris",
+        "energyEfficiency": "A",
+        "descripcion": "Notebook HP 15-ef2513la azul índigo 15.6 pulgadas, AMD Ryzen 5 5500U 8GB de RAM 256GB SSD, AMD Radeon RX Vega 7 1366x768px Windows 11 Home"
+      },
+      {
+        "id": "Baires4",
+        "name": "Silla de escritorio",
+        "manufacturer": "Baires4",
+        "color": "negro, blanco, azul, rojo",
+        "energyEfficiency": "",
+        "descripcion": "Silla de escritorio Baires4 Ejecutiva mesh negra con tapizado de mesh y cuero sintético"
+      },
+      {
+        "id": "K512",
+        "name": "Teclado gamer",
+        "manufacturer": "Redragon",
+        "color": "rgb, negro, gris",
+        "energyEfficiency": "A++",
+        "descripcion": "Teclado gamer Redragon Shiva K512 RGB QWERTY español latinoamérica color negro con luz RGB"
+      },
+      {
+        "id": "xbox_series",
+        "name": "Joystick",
+        "manufacturer": "Microsoft",
+        "color": "negro",
+        "energyEfficiency": "",
+        "descripcion": "Joystick inalámbrico Microsoft Xbox Xbox Series X|S controller + USB-C cable carbon black"
+      },
+      {
+        "id": "BTH-F9-5",
+        "name": "Auriculares",
+        "manufacturer": "TWS",
+        "color": "blanco",
+        "energyEfficiency": "",
+        "descripcion": "Auriculares in-ear gamer inalámbricos TWS F9-5 BTH-F9-5 x 1 unidades negro"
+      },
+      {
+        "id": "L32S65A-F",
+        "name": "Smart TV",
+        "manufacturer": "TCL",
+        "color": "negro",
+        "energyEfficiency": "A+",
+        "descripcion": "Smart TV TCL L32S65A-F LED Android TV HD 32 pulgadas 220v"
+      },
+      {
+        "id": "Tv-Kino",
+        "name": "Barra De Sonido",
+        "manufacturer": "Tv Kino",
+        "color": "gris",
+        "energyEfficiency": "A",
+        "descripcion": "Barra De Sonido Hdmi Bluetooth Optical Control Remot Tv Kino"
+      },
+      {
+        "id": "SOP14-55",
+        "name": "Soporte",
+        "manufacturer": "Electroland",
+        "color": "negro, marron",
+        "energyEfficiency": "",
+        "descripcion": "Soporte Electroland SOP 14-55 de pared para TV/Monitor de 14 pulgadas a 55 pulgadas negro"
+      }
+    ]
+  }

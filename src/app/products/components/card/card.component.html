@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{ product.name | titlecase }}</mat-card-title>
+        <mat-card-subtitle>{{ product.manufacturer | titlecase }}</mat-card-subtitle>
+    </mat-card-header>
+    <img matCardImage [src]="product | productImage">
+    <mat-card-content>
+        <h4>{{ product.energyEfficiency }}</h4>
+        <p>
+            {{ product.descripcion}}
+            <br>
+            <mat-chip-listbox>
+                <mat-chip *ngFor="let chip of product.color.split(',')">
+                    {{chip}}
+                </mat-chip>
+            </mat-chip-listbox>
+        </p>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions align="start">
+        <button color="primary" mat-button mat-raised [routerLink]="['/products/edit', product.id]">
+            <mat-icon class="mat-18">edit</mat-icon>
+            Editar
+        </button>
+        <span class="spacer"></span>
+        <button mat-button mat-raised [routerLink]="['/products', product.id]">
+            <mat-icon class="mat-18">more_horiz</mat-icon>
+            Más
+        </button>
+    </mat-card-actions>
+</mat-card>
