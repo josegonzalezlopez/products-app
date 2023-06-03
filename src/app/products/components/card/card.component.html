@@ -3,7 +3,7 @@
         <mat-card-title>{{ product.name | titlecase }}</mat-card-title>
         <mat-card-subtitle>{{ product.manufacturer | titlecase }}</mat-card-subtitle>
     </mat-card-header>
-    <img matCardImage [src]="product | productImage">
+    <img matCardImage [src]="product | productImage" >
     <mat-card-content>
         <h4>{{ product.energyEfficiency }}</h4>
         <p>
