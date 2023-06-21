@@ -25,4 +25,18 @@ export class ProductService {
     getSuggestions( query: string): Observable<Product[]>{
         return this.httpClient.get<Product[]>(`${this.baseUrl}/products?q=${query}&_limit=5`);
     }
+
+    addProduct(product: Product): Observable<Product>{  
+        return this.httpClient.post<Product>(`${this.baseUrl}/products`, product);
+    }
+
+    updateProduct(product: Product): Observable<Product>{
+        if(!product.id) throw Error('Product Id is required');
+
+        return this.httpClient.put<Product>(`${this.baseUrl}/Prducts/${product.id}`, product);
+    }
+
+    deleteProduct(productId: string): Observable<Object>{
+        return this.httpClient.delete(`${this.baseUrl}/products/${productId}`);
+    }
 }
