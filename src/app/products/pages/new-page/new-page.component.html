@@ -1,4 +1,4 @@
-<h1>Editar / Agregar Producto <small>Heladera</small></h1>
+<h1>{{ currentProduct.id ? 'Editar ' + currentProduct.name : 'Agregar producto' }}</h1>
 
 <mat-divider></mat-divider>
 
@@ -34,7 +34,7 @@
                 </form>
             </mat-card-content>
             <mat-card-actions align="start">
-                <button mat-flat-button color="warn">Borrar</button>
+                <button mat-flat-button color="warn" *ngIf="currentProduct.id">Borrar</button>
                 <span class="spacer"></span>
                 <button mat-flat-button color="primary" (click)="onSubmit()"><mat-icon>save</mat-icon>Guardar</button>
             </mat-card-actions>

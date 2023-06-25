@@ -33,7 +33,7 @@ export class ProductService {
     updateProduct(product: Product): Observable<Product>{
         if(!product.id) throw Error('Product Id is required');
 
-        return this.httpClient.put<Product>(`${this.baseUrl}/Prducts/${product.id}`, product);
+        return this.httpClient.put<Product>(`${this.baseUrl}/products/${product.id}`, product);
     }
 
     deleteProduct(productId: string): Observable<Object>{

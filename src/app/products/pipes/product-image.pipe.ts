@@ -10,6 +10,7 @@ export class ProductImagePipe implements PipeTransform {
     if(!product.id && !product.altImage){
       return 'assets/noProductImage.jpg';
     }
+    if(product.altImage) return product.altImage;
 
     return `assets/products/${product.id}.jpg`;
   }
