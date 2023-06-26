@@ -2,10 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
+import { filter, switchMap } from 'rxjs';
 
 import { ProductService } from '../../services/products.service';
 import { Product } from '../../interfaces/product.interface';
-import { switchMap } from 'rxjs';
+import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-dialog.component';
 
 @Component({
   selector: 'app-new-page',
@@ -28,7 +30,8 @@ export class NewPageComponent implements OnInit {
   constructor(private productService: ProductService,
               private activatedRoute: ActivatedRoute,
               private router: Router,
-              private snackBar: MatSnackBar){}
+              private snackBar: MatSnackBar,
+              private matDialog: MatDialog){}
 
   ngOnInit(): void {
     if( this.router.url.includes('edit')){
@@ -70,11 +73,38 @@ export class NewPageComponent implements OnInit {
         this.router.navigate(['/products/edit', response.id])
       }
     })
+  }
+
+  onDeleteProduct(){
+    if( !this.currentProduct.id ) throw Error('Product Id is required.');
+
+    const dialogRef = this.matDialog.open( ConfirmDialogComponent, { data: this.productForm.value });
+
+    dialogRef.afterClosed().pipe(
+      filter( (result: boolean)=> result ),
+      switchMap( ()=> this.productService.deleteProduct( this.currentProduct.id )),
+      filter( (wasDeleted: boolean)=> wasDeleted )
+    ).subscribe({
+      next: ()=> this.router.navigate(['/products'])
+    })
+    
+    // dialogRef.afterClosed().subscribe({
+    //   next: response =>{
+    //     if( !response ) return;
+
+    //     this.productService.deleteProduct( this.currentProduct.id ).subscribe({
+    //       next: wasDeleted =>{
+    //         if( wasDeleted )
+    //           this.router.navigate(['/products'])
+    //       }
+    //     });
+    //   }
+    // });
 
   }
 
   showSnackbar(message: string){
-    this.snackBar.open( message, undefined, {
+    this.snackBar.open( message, 'Ok', {
       duration: 2500,
     } );
   }

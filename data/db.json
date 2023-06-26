@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -12,8 +12,9 @@
       "name": "Heladera",
       "manufacturer": "Samsung",
       "color": "blanco, negro, amarillo",
-      "energyEfficiency": "A+",
-      "descripcion": "Heladera inverter no frost Samsung RT38K5932 inox con freezer 382L 220V"
+      "energyEfficiency": "A++",
+      "descripcion": "Heladera inverter no frost Samsung RT38K5932 inox con freezer 382L 220V",
+      "altImage": ""
     },
     {
       "id": "CS-GIC12H-01F",
@@ -184,15 +185,6 @@
       "energyEfficiency": "A",
       "descripcion": "router multicanal",
       "altImage": "https://nisuta.com/files/products/grandes1280/NSWIR302N.jpg"
-    },
-    {
-      "id": "GNKQIdN",
-      "name": "Mouse",
-      "manufacturer": "genius",
-      "color": "negro",
-      "energyEfficiency": "-",
-      "descripcion": "mouse con cable",
-      "altImage": "https://kalcomputer.com/wp-content/uploads/2014/03/MOUSE-GENIUS-USB-PRECIO325.00.jpg"
     }
   ]
 }

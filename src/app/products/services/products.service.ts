@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from '../interfaces/product.interface';
-import { Observable, catchError, of } from 'rxjs';
+import { Observable, catchError, map, of } from 'rxjs';
 import { environments } from 'src/environments/environments';
 
 @Injectable({providedIn: 'root'})
@@ -36,7 +36,11 @@ export class ProductService {
         return this.httpClient.put<Product>(`${this.baseUrl}/products/${product.id}`, product);
     }
 
-    deleteProduct(productId: string): Observable<Object>{
-        return this.httpClient.delete(`${this.baseUrl}/products/${productId}`);
+    deleteProduct(productId: string): Observable<boolean>{
+        return this.httpClient.delete(`${this.baseUrl}/products/${productId}`)
+            .pipe(
+                map( response=> true),
+                catchError( error => of(false))
+            );
     }
 }

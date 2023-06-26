@@ -11,6 +11,7 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { ProductImagePipe } from './pipes/product-image.pipe';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ProductImagePipe } from './pipes/product-image.pipe';
     NewPageComponent,
     SearchPageComponent,
     CardComponent,
-    ProductImagePipe
+    ProductImagePipe,
+    ConfirmDialogComponent
   ],
   imports: [
     CommonModule,

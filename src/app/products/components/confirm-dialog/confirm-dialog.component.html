@@ -1,0 +1,11 @@
+<h1 matDialogTitle>Esta seguro?</h1>
+
+<mat-dialog-content>
+    <p>Este proceso no es reversible, está a punto de eliminar a PRODUCTO</p>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button mat-button (click)="onDialogClose()">Cancelar</button>
+    <button mat-button color="primary" (click)="onConfirm()">Aceptar</button>
+    
+</mat-dialog-actions>
